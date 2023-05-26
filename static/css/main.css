@@ -1,0 +1,204 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container {
+
+    max-width: 720px;
+    margin: auto;
+
+}
+
+nav {
+
+    position: sticky;
+    top: 0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005bca;
+    color: white;
+    border-radius: 0 0 12px 12px;
+
+}
+
+footer {
+
+    position: relative;
+    bottom: 0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005bca;
+    color: white;
+    border-radius: 12px 12px 0 0;
+
+}
+
+footer p {
+
+    text-align: center;
+
+}
+
+.logo-box {
+
+    width: 90px;
+    height: 90px;
+    background-color: whitesmoke;
+    border: 2px wheat solid;
+    color: #005bca;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box p {
+
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.logo-box p span {
+
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.menu-link {
+
+    text-decoration: none;
+    margin-left: 16px;
+    color: #005bca;
+    background-color: whitesmoke;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.main-logo {
+
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin: 16px 32px;
+
+}
+
+.main-slogan {
+
+    text-align: center;
+    margin: 24px 32px;
+    color: #494949;
+
+}
+
+.banner-box {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 32px;
+
+}
+
+.about-corp,
+.recent-bounties-title{
+
+    text-align: center;
+    color: #7d7d7d;
+    margin-bottom: 32px;
+
+}
+
+
+.recent-bounties {
+
+    margin-bottom: 32px;
+
+}
+
+.about-corp-text {
+
+    text-align: center;
+    color: #7d7d7d;
+    margin-bottom: 48px;
+
+}
+
+.btn-contact-us-box {
+
+    text-align: center;
+
+}
+
+.btn-contact-us {
+
+    margin-bottom: 32px;
+    padding: 8px 12px;
+    background-color: wheat;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: all .3s ease-in;
+
+}
+
+.btn-contact-us:hover {
+
+    background-color: #cfbc98;
+    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, .5);
+
+}
+
+.bounty-box {
+
+    padding: 16px 0;
+    border-bottom: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bounty-title {
+
+    margin-bottom: 8px;
+
+}
+
+.bounty-location, .bounty-prize {
+
+    font-weight: normal;
+    margin-bottom: 4px;
+
+}
+
+.btn-select-bounty {
+
+    margin-bottom: 32px;
+    padding: 8px 12px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border: 1px #005bca solid;
+    border-radius: 6px;
+    transition: all .2s ease-in;
+
+}
+
+.btn-select-bounty:hover {
+
+    background-color: #005bca;
+    color: whitesmoke;
+
+}

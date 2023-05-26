@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>B-Corp BH (Bounty Hunter) - Development Bounty Hunter Site</title>
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo-box">
+                    <p>B-CORP. <span>BH</span></p>
+                </div>
+
+                <div class="menu-box">
+                    <a href="" class="menu-link">Rechercher</a>
+                    <a href="" class="menu-link">Bounties</a>
+                    <a href="" class="menu-link">Se connecter / S&apos;inscrire</a>
+                </div>
+            </nav>
+            <h1 class="main-logo">B-Corp BH</h1>
+            <h3 class="main-slogan">Le premier site pour chasseur de primes en développement d'applications</h3>
+            <img class="banner-box" src="../static/img/banner.avif" alt="banner">
+            <h2 class="about-corp">A propos de B-Corp BH</h2>
+            <p class="about-corp-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae<br>
+                earum in sit soluta neque sequi vel aspernatur eos provident eius corporis quo<br>
+                temporibus cum voluptatem odit sapiente, perspiciatis similique maiores?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium<br>
+                reprehenderit porro itaque in soluta vitae deserunt iste excepturi.<br>
+                Dignissimos, a. Eum, at earum porro tempora dolorum molestiae fugiat similique<br>
+                aperiam?
+            </p>
+            <h2 class="recent-bounties-title">Bounties récentes</h2>
+            <div class="recent-bounties">
+                {% for bounty in bounties %}
+                <div class="bounty-box">
+                    <div>
+                        <h4 class="bounty-title">{{bounty['objective']}}</h4>    
+                        <h5 class="bounty-location"><b>Location: </b>{{bounty['location']}}</h5>
+                        <h5 class="bounty-prize"><b>Bounty: </b>{{bounty['amount']}}</h5>
+                    </div>
+                    <div>
+                        <button class="btn-select-bounty">Select</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="btn-contact-us-box">
+                <button class="btn-contact-us">Nous contacter</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2023 Axel Gervais Beri. Tous droits réservés. <br>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
